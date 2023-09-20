@@ -1,7 +1,5 @@
 package crawling0919;
 
-
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -22,6 +20,7 @@ public class Test02_egovframe {
 		}catch (Exception e) {
 			System.out.println("크롤링 실패 : " + e);
 		}//end
+		
 		
 	}//main() end
 }//class end
