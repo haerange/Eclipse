@@ -7,24 +7,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>sungjukRead.jsp</title>
+<title>sungjukUpdate.jsp</title>
 </head>
 <body>
 
-	<h3>* 성적 상세보기 *</h3>
+	<h3>* 성적 수정 *</h3>
 	<p>
 		<a href="sungjukForm.jsp">[성적 쓰기]</a>
 		<a href="sungjukList.jsp">[성적 목록]</a>
 	</p>
 	
 <%
-	//예)sungjukRead.jsp?sno=21
-	//out.print(request.getParameter("sno"));	
+	//예)수정하고자 하는 글 번호 sungjukUpdate.jsp?sno=21	
 	int sno=Integer.parseInt(request.getParameter("sno"));
 	
 	Connection con = null;
 	PreparedStatement pstmt = null;
-	ResultSet rs = null;
+	ResultSet rs= null;
 	
 	try {
 		

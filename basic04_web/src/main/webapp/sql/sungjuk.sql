@@ -64,6 +64,14 @@ drop sequence sungjuk_seq;
  ※ sungjukList.jsp 참조
  select * from sungjuk where sno=?
  
+ ● [행삭제] sungjukDel.jsp
+ delete from sungjuk where sno=?
+ 
+ ● [행수정]
+ -> sungjukUpdate.jsp	  :select문
+ -> sungjukUpdateProc.jsp :update sungjuk
+ 						   set uname=?, kor=?, eng=?, mat=?, addr=?, wdate=sysdate
+ 
  
  
  
