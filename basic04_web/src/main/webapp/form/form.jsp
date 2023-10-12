@@ -12,7 +12,7 @@
 <script>
 	function validate() {
 		//alert();
-		//이름 3~20 글자 이내에서 입력해야만 섭로 전송 (02.ok.jsp)
+		//이름 3~20 글자 이내에서 입력해야만 서버로 전송 (02.ok.jsp)
 		//jQuery : $("#uname").val()
 		let uname=document.getElementById("uname").value;
 		uname = uname.trim();
