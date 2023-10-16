@@ -16,7 +16,7 @@ body {
   }
   .bg-2 { 
     background-color: #474E5D; /* Dark Blue */
-    color: #ffffff;
+    color:pink;
   }
   .bg-3 { 
     background-color: #ffffff; /* White */
@@ -24,7 +24,7 @@ body {
   }
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
+    color: hotpink;
   }
   .container-fluid {
     padding-top: 30px;
