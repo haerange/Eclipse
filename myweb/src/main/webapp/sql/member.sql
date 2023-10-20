@@ -25,6 +25,7 @@ CREATE TABLE member (
 );
 ///////////////////////////////////////////////
 
+--행 추가
 insert into member(id, passwd, mname, tel, email, zipcode, address1, address2, job, mlevel, mdate)
 values('webmaster', '12341234', '웹마스터', '123-4567', 'webmaster@itwill.com'
      , '12345', '서울시 강남구 역삼동', '삼원타워4층', 'A02', 'A1', sysdate );
