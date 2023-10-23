@@ -8,12 +8,12 @@ public class MemberDTO {  //Data Transfer Object 전송객체
 	    private String mname; 
 	    private String tel;   
 	    private String email;    
-	    private String zipcode;
-	    private String address1;
-	    private String address2;
-	    private String job;
-	    private String mlevel;
-	    private String mdate;    
+	    private String zipcode;		//우편번호
+	    private String address1;	//주소
+	    private String address2;	//나머지 주소
+	    private String job;	
+	    private String mlevel;		//등급
+	    private String mdate;    	
 	    
 	    //기본생성자 default constructor    (source > getter and setters 클릭)
 	    //								  (source > tostring()  클릭)
