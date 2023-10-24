@@ -129,10 +129,12 @@ function memberCheck() { //회원가입 유효성 검사
 	
 	//3)비밀번호와 비밀번호 확인이 서로 일치하는지?	
 	let passwd=document.getElementById("passwd").value;
- 	passwd=passwd.trim();
- 	if(!(passwd.value == repasswd.value)){
-		 alert("비밀번호를 다시 입력해주세요");
-         document.getElementById("passwd").focus();
+	let repasswd=document.getElementById("repasswd").value;
+ 	//passwd=passwd.trim();
+ 	//if(!(passwd.value == repasswd.value)){
+ 	if(passwd == repasswd){
+		 alert("비밀번호를 다시 입력해주세요.");
+         //document.getElementById("passwd").focus();
 		 return false;
 	 }//if end
 	 
