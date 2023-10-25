@@ -133,7 +133,7 @@ function memberCheck() { //회원가입 유효성 검사
  	//passwd=passwd.trim();
  	//if(!(passwd.value == repasswd.value)){
  	if(passwd == repasswd){
-		 alert("비밀번호를 다시 입력해주세요.");
+		 alert("비밀번호를 다시 입력해 주세요.");
          //document.getElementById("passwd").focus();
 		 return false;
 	 }//if end
@@ -152,24 +152,45 @@ function memberCheck() { //회원가입 유효성 검사
 	//5)이메일 5글자 이상인지?
 	 let email=document.getElementById("email").value;
  	email=email.trim();
- 	if(!(email.length>=5)){
+ 	if(email.length<5){
 		 alert("이메일을 5글자 이상 입력해 주세요");
          document.getElementById("email").focus();
 		 return false;
 	 }//if end
 	 
 	//6)직업을 선택했는지?
-	
-	
-	
-	
+	let job=document.getElementById("job").value;
+	if(job=="0"){
+		alert("직업을 선택해 주세요");
+		return false;
+	}//if end	
 	
 	return true; //서버로 전송
 	
 }//memberCheck() end
 
 
+function findIDCheck() {
+	//1)이름 두글자 이상인지?
+	let mname=document.getElementById("mname").value;
+	mname=mname.trim();
+	if(mname.length<=1){
+		alert("이름 두글자 이상 입력해 주세요");
+		document.getElementById("mname").focus();
+		return false;
+	}//if end
+	
+	//2)이메일 5글자 이상인지?
+	let email=document.getElementById("email").value;
+	email=email.trim();
+	if(email.length<5){
+		alert("이메일 5글자 이상 입력해 주세요");
+		document.getElementById("email").focus();
+		return false;
+	}//if end
 
+	return true;
+}//findIDCheck() end
 
 
 
