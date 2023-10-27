@@ -126,7 +126,7 @@ function memberCheck() { //회원가입 유효성 검사
 	
 	//2)비밀번호 5~10글자인지?
 	
-	
+		
 	//3)비밀번호와 비밀번호 확인이 서로 일치하는지?	
 	let passwd=document.getElementById("passwd").value;
 	let repasswd=document.getElementById("repasswd").value;
@@ -224,6 +224,22 @@ function pdsCheck() { //포토 갤러리 유효성 검사
 
 
 
+function pwCheck2(){
+	let passwd=document.getElementById("passwd").value;
+	passwd=passwd.trim();
+	if(passwd.length<4){
+		alert("비밀번호 4~15글자 이내로 입력해 주세요");
+		document.getElementById("passwd").focus();
+		return false;
+	}//if end
+	
+	let message="첨부 파일도 삭제됩니다\n계속 진행할까요?";
+	if(confirm(message)){ //확인 true, 취소 false
+	 	return true;  //서버로 전송
+	}else{
+		return false;
+	}//if end
+}//pwCheck2() end
 
 
 
