@@ -28,15 +28,15 @@ CREATE TABLE member (
 --행 추가
 insert into member(id, passwd, mname, tel, email, zipcode, address1, address2, job, mlevel, mdate)
 values('webmaster', '12341234', '웹마스터', '123-4567', 'webmaster@itwill.com'
-     , '12345', '서울시 강남구 역삼동', '삼원타워4층', 'A02', 'A1', sysdate );
+     , '12345', '서울시 강남구 역삼동', '삼원타워4층', 'A02', 'A1', now() );
      
 insert into member(id, passwd, mname, tel, email, zipcode, address1, address2, job, mlevel, mdate)
 values('itwill', '12341234', '웹마스터', '123-4567', 'itwill@itwill.com'
-     , '12345', '서울시 강남구 역삼동', '삼원타워4층', 'A02', 'D1', sysdate );
+     , '12345', '서울시 강남구 역삼동', '삼원타워4층', 'A02', 'D1', now() );
      
 insert into member(id, passwd, mname, tel, email, zipcode, address1, address2, job, mlevel, mdate)
 values('korea', '12341234', '웹마스터', '123-4567', 'korea@itwill.com'
-     , '12345', '서울시 종로구 관철동', '코아빌딩8층', 'A02', 'F1', sysdate );
+     , '12345', '서울시 종로구 관철동', '코아빌딩8층', 'A02', 'F1', now() );
 
 commit;
 
@@ -90,21 +90,9 @@ update member
 set passwd=?
 where mname=? and email=?
 
---회원수정
-update
-set
-where id=?
 
---회원탈퇴
-1)
-update
-set mlevel = 'F1'
-where  id=? and passwd=?
 
-2)
-delete
-from
-where  id=? and passwd=?
+
 
 
 
